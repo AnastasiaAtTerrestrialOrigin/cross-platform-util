@@ -56,5 +56,8 @@
   "peerDependencies": {
     "@capacitor/core": "^7.0.1",
     "react": "^19.0.0"
+  },
+  "dependencies": {
+    "terrestrial-util-types": "^0.1.0"
   }
 }
