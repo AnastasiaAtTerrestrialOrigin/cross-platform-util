@@ -1,0 +1,60 @@
+{
+  "name": "util-test",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "npm run lint && npm run type-check && npm run test && esbuild --bundle --minify --sourcemap src/index.ts --outfile=dist/index.js --format=esm && npm run types",
+    "type-check": "tsc --noEmit",
+    "types": "tsc",
+    "test": "jest",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "type-check:watch": "tsc --noEmit --watch",
+    "build:watch": "esbuild --bundle --watch --sourcemap src/index.ts --outfile=dist/index.js --format=esm",
+    "lint:watch": "nodemon --watch src --ext ts,tsx --exec \"npm run lint\"",
+    "dev": "concurrently \"npm run type-check:watch\" \"npm run build:watch\" \"npm run lint:watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "template",
+    "npm",
+    "library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "{{bugs}}"
+  },
+  "homepage": "{{homepage}}",
+  "devDependencies": {
+    "@capacitor/core": "^7.0.1",
+    "@eslint/js": "^9.20.0",
+    "@types/babel__core": "^7.20.5",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "concurrently": "^9.1.2",
+    "esbuild": "0.25.0",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^7.0.1",
+    "react": "^19.0.0"
+  }
+}
