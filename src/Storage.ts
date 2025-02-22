@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IStorage } from 'util-test-types';
+import { IStorage } from 'terrestrial-util-types';
 /**
  * Implementation of IStorage that uses localStorage.
  */
