@@ -1,8 +1,8 @@
 {
-  "name": "terrestrial-util",
-  "version": "0.1.1",
+  "name": "cross-platform-util",
+  "version": "0.1.0",
   "type": "module",
-  "description": "",
+  "description": "Cross platform utilities for Capacitor, Electron, and web. Please note that anything that needs to be called by preload.js should go to cross-platform-util-electron-preload for now.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/AnastasiaAtTerrestrialOrigin/cross-platform-util.git"
   },
   "keywords": [
     "template",
@@ -32,9 +32,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnastasiaAtTerrestrialOrigin/terrestrial-util/issues"
+    "url": "https://github.com/AnastasiaAtTerrestrialOrigin/cross-platform-util/issues"
   },
-  "homepage": "https://github.com/AnastasiaAtTerrestrialOrigin/terrestrial-util",
+  "homepage": "https://github.com/AnastasiaAtTerrestrialOrigin/cross-platform-util",
   "devDependencies": {
     "@capacitor/core": "^7.0.1",
     "@eslint/js": "^9.20.0",
@@ -58,6 +58,6 @@
     "react": "^19.0.0"
   },
   "dependencies": {
-    "terrestrial-util-types": "^0.1.0"
+    "cross-platform-util-types": "^0.1.0"
   }
 }
