@@ -1,6 +1,6 @@
 {
   "name": "cross-platform-util",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Cross platform utilities for Capacitor, Electron, and web. Please note that anything that needs to be called by preload.js should go to cross-platform-util-electron-preload for now.",
   "main": "dist/index.js",
